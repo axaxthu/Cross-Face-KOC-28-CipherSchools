@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+</head>
+<style>
+    body {
+        font-family: Calibri, Helvetica, sans-serif;
+        background-color: rgb(255, 0, 43);
+    }
+
+    .navbar {
+        display: inline-block;
+        margin-left: 430px;
+        margin-top: 0px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 10px;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: none;
+        color: goldenrod;
+        font-size: large;
+    }
+
+    .container {
+        padding: 50px;
+        background-color: rgb(211, 211, 211);
+    }
+
+    input[type=text],
+    input[type=password],
+    textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+        background-color: orange;
+        outline: none;
+    }
+
+    div {
+        padding: 10px 0;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    .registerbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+        opacity: 1;
+    }
+</style>
+
+<body>
+
+    <form>
+        <div class="container">
+            <div class="navbar">
+                <ul class="navbar">
+                    <li> <button type="button"><a href="main.html">Home</a></button></li>
+                    <li> <button type="button"><a href="about.html">About Us</a></button></li>
+                    <li><button type="button"><a href="training.html">Trainings</a></button></li>
+                    <li><button type="button"><a href="timtable.html">Timetable</a></button></li>
+                    <li> <button type="button"><a href="nutrition.html">Nutrition</a></button></li>
+                    <li> <button type="button"><a href="gallery.html">Gallery</a></button></li>
+                </ul>
+            </div>
+            <center>
+                <h1>REGISTRATION FORM</h1>
+            </center>
+            <hr>
+            <label> Firstname: </label>
+            <input type="text" name="firstname" placeholder="Firstname" size="15" required>
+            <label> Middlename: </label>
+            <input type="text" name="middlename" placeholder="Middlename" size="15">
+            <label> Lastname: </label>
+            <input type="text" name="lastname" placeholder="Lastname" size="15">
+            <div>
+                <label>
+                    City:
+                </label>
+
+                <select>
+                    <option value="Phagwara">Mumbai</option>
+                    <option value="Jalandhar">Delhi</option>
+                    
+                </select>
+            </div>
+            <div>
+                <label>
+                    Gender :
+                </label><br>
+                <input type="radio" value="Male" name="gender" checked> Male
+                <input type="radio" value="Female" name="gender"> Female
+                <input type="radio" value="Other" name="gender"> Other
+
+            </div>
+            <label>
+                Phone :
+            </label>
+
+            <input type="text" name="phone" placeholder="phone no." value="+91" size="10" required>
+            <lable>
+                Application Fee :
+            </lable> <br> <br>
+            <input type="radio" value="6 month RS 4000" name="fee"> 6 months RS 4000<br>
+            <input type="radio" value=" 12 month RS 7000" name="fee"> 12 months RS 7000(you save RS 1000)<br><br>
+
+            Current Address :
+            <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+      </textarea>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Re-type Password</b></label>
+            <input type="password" placeholder="Retype Password" name="psw-repeat" required>
+            <button type="submit" class="registerbtn">Register</button>
+            <button type="reset" class="registerbtn">Reset</button>
+
+    </form>
+</body>
+
+</html>
